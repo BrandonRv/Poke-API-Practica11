@@ -3,6 +3,7 @@ import "./App.css";
 import Card from "./components/Card";
 import SideBar from "./components/SideBar";
 import PokeballSpinner from "./components/PokeballSpinner";
+import pokeball from "../public/pokeball.svg";
 
 function App() {
   const [data, setData] = useState([]);
@@ -35,7 +36,7 @@ function App() {
       <header>
         <div id="divImgLogo">
           <h1>Pokedex</h1>
-          <img src="/pokeball.svg" alt="Pokeball" id="pokeball" />
+          <img src={pokeball} alt="Pokeball" id="pokeball" />
         </div>
       </header>
       <div id="contenido">

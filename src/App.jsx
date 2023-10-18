@@ -3,7 +3,7 @@ import "./App.css";
 import Card from "./components/Card";
 import SideBar from "./components/SideBar";
 import PokeballSpinner from "./components/PokeballSpinner";
-import pokeball from "../public/pokeball.svg";
+import pokeball from "../public/pokeball";
 
 function App() {
   const [data, setData] = useState([]);

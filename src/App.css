@@ -1,0 +1,108 @@
+#root {
+  max-width: 1880px;
+  padding: 3rem;
+}
+
+
+#main > header {
+  background-color: rgb(220, 150, 0);
+  border-radius: 15px;
+  padding: 12px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.card:hover {
+  filter: drop-shadow(0 0 2em #535cffaa);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card > img {
+  width: 100px;
+}
+
+.card > h3 {
+  width: 180px;
+}
+
+.card {
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  cursor: pointer;
+  border-radius: 15px;
+
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  text-align: center;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+#divCards {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)); /* Crea columnas de tamaño mínimo de 200px */
+  grid-gap: 5px; /* Espaciado entre las tarjetas */
+  max-height: 550px; /* Establecer una altura máxima para activar la barra de desplazamiento */
+  overflow-y: auto; /* Agregar barra de desplazamiento vertical cuando el contenido excede la altura máxima */
+}
+
+div > img {
+  width: 80px;
+}
+
+#contenido {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 62vh;
+  overflow: hidden;
+  border-style: double;
+  border-radius: 10px;
+}
+
+.info-Poke {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  padding: 10rem;
+}
+
+#divImgLogo {
+  display: flex;
+  gap: 1.2rem;
+}
+
+#pokeball {
+  animation: spin 0.8s infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#sideBar-Img > img {
+  width: 200px;
+}
